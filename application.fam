@@ -2,16 +2,16 @@
 
 App(
     appid="m64_world",  # Must be unique
-    name="App m64_world",  # Displayed in menus
+    name="M64 World!",  # Displayed in menus
     apptype=FlipperAppType.EXTERNAL,
     entry_point="m64_world_app",
     stack_size=2 * 1024,
-    fap_category="Examples",
+    fap_category="M64", # Sub-folder on flipper under /apps
     # Optional values
     # fap_version="0.1",
     fap_icon="m64_world.png",  # 10x10 1-bit PNG
-    # fap_description="A simple app",
-    # fap_author="J. Doe",
+    fap_description="A simple app",
+    fap_author="M64",
     # fap_weburl="https://github.com/user/m64_world",
     fap_icon_assets="images",  # Image assets to compile for this application
 )
