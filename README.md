@@ -25,7 +25,7 @@ To build/run for Momentum or other custom firmware:
  - run `./fbt APPSRC=m64_world` to build only
 
 ## neovim / lsp / clangd
-For clangd / neovim lsp configuration: create a compile_command.json: grep the lines containing 'm64_world' out of your 
+Create a compile_command.json: grep the lines containing 'm64_world' out of your 
 ./build/f7-firmware-C/compile_commands.json, after you have built via fbt. Then add the include 
 ```
 -Itoolchain/x86_64-linux/arm-none-eabi/include
