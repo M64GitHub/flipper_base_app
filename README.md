@@ -6,6 +6,7 @@ Note: Project structure was created using
 ubft create APPID=m64_world
 ```
 
+## Build for the standard firmware
 To build, you need to build against your firmware. On flipper standard firmware, you can continue to use ubft:
 To build:
 ```
@@ -16,6 +17,7 @@ To run on flipper: connect flipper, run
 ubft launch
 ```
 
+## Build for custom firmware
 To build/run for Momentum or other custom firmware:
  - clone firmware, cd into it
  - copy project into applications_user/
