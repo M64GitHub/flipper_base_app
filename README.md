@@ -50,11 +50,9 @@ CompileFlags:
 The first directory entry that is found, will then be used for the lsp.
 When you experience errors like "stdlib.h" not found, please proceed like below and manually edit the compile_commands.json:
 
-### For standard firmware, ufbt build
-
-Manually edit the  
+### For standard firmware, ufbt build 
 - find the line for m64_world.c in `.vscode/compile_commands.json`
-- insert `-Ipath-to-your-home-directory/.ufbt/toolchain/x86_64-linux/arm-none-eabi/include` into it.
+- insert `-Ipath-to-your-home-directory/.ufbt/toolchain/x86_64-linux/arm-none-eabi/include` into it
 
 ### For custom / full firmware, fbt build
  - find the line for m64_world.c in `build/f7-firmware-C/compile_commands.json`
