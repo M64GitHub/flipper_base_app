@@ -9,8 +9,6 @@ ufbt create APPID=m64_world
 There are some differences between building this app "standalone" (possible for the standard firmware), or in context / as a part of a whole (custom) firmware. When building for the standard-library, you can use the flipper simplified build tool `ufbt`. Else you will need to build with the standard flipper build tool `fbt`. 
 
 ### Build for the standard firmware
-To build, you need to build against your firmware. On flipper standard firmware, you can use ufbt:  
-
 Build:
 ```
 ufbt
