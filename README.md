@@ -34,9 +34,9 @@ Build and run on connected flipper:
 ```
 
 ## neovim / lsp / clangd
-The flipper build tools `fbt` and `ufbt` both generate a `compile_commands.json` file. This file can be used for the lsp configuration in neovim. In theory all you need to do is to instruct clangd where to find this compile_commands.json file. You can do this by using a `.clangd` file, and specify the folder. But there are some issues you will need to adress manually: both compile_commands.json are missing for example the includes to the standard libraries.
+The flipper build tools `fbt` and `ufbt` both generate a `compile_commands.json` file. This file can be used for the lsp configuration in neovim. In theory all you need to do is to instruct clangd where to find this compile_commands.json file. You can do this by using a `.clangd` file, and specify the folder. But there is at least one issue you will need to adress manually: both compile_commands.json are missing the includes to the standard libraries.
 
-`ufbt` creates the build database in the subfolder `.vscode`. When you work with a full (standard or custom) firmware, `fbt` will create the compile_commands.json in the folder `build/f7-firmware-C/`.  
+`ufbt` creates the build database in the subfolder `.vscode`. `fbt` will create the compile_commands.json in the folder `build/f7-firmware-C/`.  
 
 I therefor created the .clangd file for this project:
 ```
@@ -44,7 +44,7 @@ CompileFlags:
   CompilationDatabase: .vscode/
   CompilationDatabase: ../../build/f7-firmware-C/
 ```
-A directory entry that is found, will then be used for the lsp.
+The first directory entry that is found, will then be used for the lsp.
 When you experience errors like "stdlib.h" not found, please proceed like below:
 
 ### For standard firmware, ufbt build
