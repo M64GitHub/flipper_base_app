@@ -8,12 +8,13 @@ ufbt create APPID=m64_world
 There are some differences between building this app "standalone" (possible for the standard firmware), or in context / as a part of a whole (custom) firmware. When building for the standard-library, you can use the flipper simplified build tool `ufbt`. Else you will need to build with the standard flipper build tool `fbt`. 
 
 ### Build for the standard firmware
-To build, you need to build against your firmware. On flipper standard firmware, you can use ufbt:
-To build:
+To build, you need to build against your firmware. On flipper standard firmware, you can use ufbt:  
+
+Build:
 ```
 ufbt
 ```
-To run on flipper: connect flipper, run
+Build and run on connected flipper:
 ```
 ufbt launch
 ```
@@ -22,8 +23,16 @@ ufbt launch
 To build/run for Momentum or other custom firmware:
  - clone firmware, cd into it
  - copy project into applications_user/
- - run `./fbt launch APPSRC=m64_world` to build and run on connected flipper, or
- - run `./fbt APPSRC=m64_world` to build only
+
+Build:
+```
+./fbt APPSRC=m64_world
+```
+
+Build and run on connected flipper:
+```
+./fbt launch APPSRC=m64_world
+```
 
 ## neovim / lsp / clangd
 The flipper build tools both `fbt` and `ufbt` both generate a `compile_commands.json` file. This file can be used for the lsp configuration in neovim. In theory all you need to do is to instruct clangd where to find this compile_commands.json file. You can do this by using a `.clangd` file, and specify the folder. But there are some issues you will need to adress manually: both compile_commands.json are missing for example the includes to the standard libraries.
