@@ -58,5 +58,6 @@ When you experience errors like "stdlib.h" not found, please proceed like below 
  - find the line for m64_world.c in `build/f7-firmware-C/compile_commands.json`
  - insert `-Itoolchain/x86_64-linux/arm-none-eabi/include` into it
 
+Since fbt recreates this file on each build, it is a good idea to copy this file to the projects root folder. You can then also remove all other lines of it, and also remove the .clangd file. clangd will pick up this file per default from the applications root folder.
 
 
