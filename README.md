@@ -47,7 +47,7 @@ CompileFlags:
   CompilationDatabase: .vscode/
 # CompilationDatabase: ../../build/f7-firmware-C/
 ```
-Please uncomment / comment for your corresponding situation.
+Please uncomment / comment corresponding to your build situation.  
 When you experience errors like "stdlib.h" not found, please proceed like below and manually edit the compile_commands.json:
 
 ### For standard firmware, ufbt build 
