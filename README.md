@@ -45,9 +45,9 @@ I therefor created the .clangd file for this project:
 ```
 CompileFlags:
   CompilationDatabase: .vscode/
-  CompilationDatabase: ../../build/f7-firmware-C/
+# CompilationDatabase: ../../build/f7-firmware-C/
 ```
-The first directory entry that is found, will then be used for the lsp.
+Please uncomment / comment for your corresponding situation.
 When you experience errors like "stdlib.h" not found, please proceed like below and manually edit the compile_commands.json:
 
 ### For standard firmware, ufbt build 
