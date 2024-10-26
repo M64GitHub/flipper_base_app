@@ -1,4 +1,5 @@
 .cache
 .vscode
 dist
+compile_commands.json
 

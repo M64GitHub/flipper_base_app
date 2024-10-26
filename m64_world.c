@@ -121,7 +121,7 @@ void m64world_app_scene_on_enter_popup_one(void* context) {
     popup_set_context(app->popup, app);
     popup_set_header(app->popup, "BAM64!", 64, 10, AlignCenter, AlignTop);
     popup_set_icon(app->popup, 10, 10, &I_cvc_36x36);
-    popup_set_text(app->popup, "1 2 3 4, everybody on the floor!", 64, 20, AlignLeft, AlignTop);
+    popup_set_text(app->popup, "Hello Mario64 World!", 64, 24, AlignLeft, AlignTop);
     view_dispatcher_switch_to_view(app->view_dispatcher, M64AppView_Popup);
 }
 
