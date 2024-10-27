@@ -1,5 +1,5 @@
 CompileFlags:
   Add: -ferror-limit=0
-  CompilationDatabase: .vscode/
-  #  CompilationDatabase: ../../build/f7-firmware-C/
+  # CompilationDatabase: .vscode/
+  CompilationDatabase: ../../build/f7-firmware-C/
 
