@@ -1,4 +1,5 @@
-![m641](https://github.com/user-attachments/assets/e70c156d-8c28-47ea-bd1a-c38d61ae1e93)
+
+![tick64](https://github.com/user-attachments/assets/9e130a89-6e5a-42cf-b7c0-10ccb4ce9064)
 
 # M64 Flipper Base App
 
